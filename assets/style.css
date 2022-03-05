@@ -12,6 +12,16 @@ html {
     list-style: none;
 }
 
+.text-left {
+    text-align: left;
+    left: 0;
+}
+
+.text-right {
+    text-align: right;
+    right: 0;
+}
+
 /* HEADER */
 #header {
     padding: 0 25px;
@@ -22,6 +32,10 @@ html {
     font-size: 30px;
     text-transform: uppercase;
     float: left;
+}
+
+#header .nav li {
+    display: inline-block;
 }
 
 #header .nav > li,
@@ -38,10 +52,27 @@ html {
     position: absolute;
     background-color: white;
     padding: 8px 24px;
-    left: 0px;
-    top: 70px;
+    top: 65px;
+    border-top: 2px solid #c7a17a;
+    display: none;
 }
 
 #header .sub-nav li {
-    
+    color: #666;
+    width: 200px;
+    font-size: 13px;
+}
+
+#header .sub-nav li:hover {
+    color: #c7a17a;
+}
+
+#header .nav li:hover ul {
+    display: block;
+    cursor: pointer;
+}
+
+#header li .ti-arrow-left {
+    float: left;
+    padding: 0;
 }
