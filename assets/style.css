@@ -39,40 +39,64 @@ html {
 }
 
 #header .nav > li,
-#header .nav i {
+#header .nav > i {
     float: right;
     padding: 18px;
     line-height: 2;
     text-transform: uppercase;
     font-size: 15px;
+    font-weight: 700;
+    color: white;
     position: relative;
 }
 
-#header .sub-nav {
+#header .nav > li:hover {
+    cursor: pointer;
+}
+
+#header .nav > i:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#header .sub-nav,
+#header .sub-nav .double-sub-nav {
     position: absolute;
     background-color: white;
-    padding: 8px 24px;
-    top: 65px;
+    padding: 12px 0;
+    line-height: 35px;
+    font-weight: 400;
     border-top: 2px solid #c7a17a;
     display: none;
 }
 
+#header .sub-nav {
+    top: 65px;
+}
+
+#header .sub-nav .double-sub-nav {
+    top: -12px;
+    right: 240px;
+}
+
 #header .sub-nav li {
     color: #666;
-    width: 200px;
+    width: 240px;
     font-size: 13px;
+    padding: 0 24px;
 }
 
 #header .sub-nav li:hover {
     color: #c7a17a;
 }
 
-#header .nav li:hover ul {
+#header li:hover ul,
+#header .add-sub-nav:hover ul {
     display: block;
     cursor: pointer;
 }
 
 #header li .ti-arrow-left {
     float: left;
-    padding: 0;
+    padding-top: 16px;
 }
